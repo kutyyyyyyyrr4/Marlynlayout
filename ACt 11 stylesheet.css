@@ -1,0 +1,67 @@
+body {
+    background-color: gray;
+    margin: 20px 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 70px 80px 1fr 1fr 70px;
+    height: 100vh;
+    gap: 2px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: powderblue;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 4px dashed black;
+    border-radius: 15px;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: powderblue;
+    text-align: center;
+    border: 4px dashed black;
+    border-radius: 15px;
+    
+}
+
+section {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 30px;
+    background-color: powderblue;
+    padding-left: 20px;
+}
+
+aside  {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: powderblue;
+}
+
+article {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: powderblue;
+    padding-left: 15px;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: powderblue;
+    font-size: 40px;
+}
